@@ -4,7 +4,7 @@ runtime macros/matchit.vim
 set ttyfast
 set lazyredraw
 
-let g:ruby_path="~/.rvm/bin/ruby"
+let g:ruby_path="~/.rbenv/shims"
 
 " have jsx highlighting/indenting work in .js files as well
 let g:jsx_ext_required = 0
@@ -23,13 +23,12 @@ map <Leader>q :qall<CR>
 map <Leader>gs :Gstatus<CR>
 map <Leader>gc :Gcommit<CR>
 map <Leader>gp :Gpush<CR>
-"
+
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
-
 
 " Toggle nerdtree with F10
 map <F10> :NERDTreeToggle<CR>
@@ -41,15 +40,12 @@ set ttimeout
 set ttimeoutlen=20
 set notimeout
 
-" Edit another file in the same directory as the current file
-" uses expression to extract path from current file's path
-
 " highlight vertical column of cursor
 au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline
 set cursorline
 
-"key to insert mode with paste using F2 key
+" key to insert mode with paste using F2 key
 map <F2> :set paste<CR>i
 " Leave paste mode on exit
 au InsertLeave * set nopaste
@@ -147,7 +143,7 @@ if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 let g:airline_symbols.space = "\ua0"
-let g:airline_theme='solarized'
+let g:airline_theme='cool'
 set t_Co=256
 
 :set smartcase
@@ -155,7 +151,7 @@ set t_Co=256
 :set noantialias
 
 " Color scheme
-colorscheme solarized
+colorscheme default
 set background=dark
 set encoding=utf-8
 

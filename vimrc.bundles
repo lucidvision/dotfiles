@@ -19,7 +19,8 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'geekjuice/vim-spec'
 Bundle 'tpope/vim-bundler'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'bling/vim-airline'
+Bundle 'vim-airline/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-surround'
 Bundle 'tmhedberg/matchit'
@@ -46,6 +47,5 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'jsx/jsx.vim'
 Bundle 'terryma/vim-expand-region'
-
 
 filetype on
